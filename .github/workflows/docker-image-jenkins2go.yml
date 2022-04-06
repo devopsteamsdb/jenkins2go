@@ -35,6 +35,13 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: devopsteamsdb/devopsteamsdb:jenkins_${{ steps.date.outputs.date }}
+        tags: devopsteamsdb/devopsteamsdb:jenkins2go_${{ steps.date.outputs.date }}
+        file: Dockerfile
+        
+    - name: Push image
+      uses: docker/build-push-action@v2
+      with:
+        push: true
+        tags: devopsteamsdb/devopsteamsdb:jenkins2go_latest
         file: Dockerfile
       
