@@ -44,4 +44,11 @@ jobs:
         push: true
         tags: devopsteamsdb/devopsteamsdb:jenkins2go_latest
         file: Dockerfile
-      
+        
+    - name: SendGrid Mail Action
+      uses: mmichailidis/sendgrid-mail-action@v1.1
+      with:
+        sendgrid-token: ${{ secrets.SENDGRID_TOKEN }}
+        mail: devops.team.sdb@gmail.com       
+        subject: Docker build Completred
+        individual: "Docker tag: devopsteamsdb/devopsteamsdb:jenkins2go_${{ steps.date.outputs.date }} $EVENT$, $ISSUE$, $ACTION$" 
