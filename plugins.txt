@@ -119,3 +119,4 @@ role-strategy
 ssh-agent
 validating-string-parameter
 windows-slaves
+kubernetes:3580.v78271e5631dc
