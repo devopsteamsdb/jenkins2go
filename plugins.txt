@@ -121,3 +121,4 @@ validating-string-parameter
 windows-slaves
 kubernetes
 javax-mail-api
+configuration-as-code
