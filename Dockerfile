@@ -10,4 +10,6 @@ RUN git config --global http.sslVerify false
 
 RUN jenkins-plugin-cli --plugin-file /usr/share/jenkins/ref/plugins.txt
 
+RUN jenkins-plugin-cli --plugins kubernetes:3734.v562b_b_a_627ea_c
+
 RUN rm -rf /usr/share/jenkins/ref/plugins.txt
