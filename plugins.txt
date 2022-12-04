@@ -1,5 +1,5 @@
-sshd:3.1.0
-jaxb:2.3.0.1
+sshd
+jaxb
 envinject
 trilead-api
 cloudbees-folder
