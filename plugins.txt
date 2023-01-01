@@ -122,4 +122,4 @@ javax-mail-api:1.6.2-8
 configuration-as-code
 conditional-buildstep
 fstrigger
-saml
+saml:4.385.v4dea_91565e9d
