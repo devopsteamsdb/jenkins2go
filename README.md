@@ -1,5 +1,6 @@
 # jenkins2go
 
+[![Docker Image CI](https://github.com/devopsteamsdb/jenkins2go/actions/workflows/docker-image.yml/badge.svg)](https://github.com/devopsteamsdb/jenkins2go/actions/workflows/docker-image.yml)
 to test the docker image use this command:
 
 
