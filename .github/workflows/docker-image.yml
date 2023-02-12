@@ -5,7 +5,7 @@ on:
     branches: [ main ]
     paths-ignore:
       - 'README.md'
-      - '.github/workflows/docker-image.yml'
+      #- '.github/workflows/docker-image.yml'
 
   pull_request:
     branches: [ main ]
