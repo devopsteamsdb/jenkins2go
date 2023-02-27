@@ -126,3 +126,4 @@ saml:4.385.v4dea_91565e9d
 prometheus
 cloudbees-disk-usage-simple:178.v1a_4d2f6359a_8
 metrics
+uipath-automation-package
