@@ -71,6 +71,7 @@ matrix-auth
 matrix-project
 metrics
 momentjs
+oic-auth
 pam-auth
 parameterized-scheduler
 parameterized-trigger
