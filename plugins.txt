@@ -15,7 +15,7 @@ build-timeout
 build-with-parameters
 calendar-view
 categorized-view
-cloudbees-disk-usage-simple:178.v1a_4d2f6359a_8
+cloudbees-disk-usage-simple
 cloudbees-folder
 command-launcher
 conditional-buildstep
