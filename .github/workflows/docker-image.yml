@@ -66,6 +66,11 @@ jobs:
     - name: get size of file
       run: ls -lah
 
+    - name: Get jenkins version
+      id: jenkins_version
+      run: |
+          echo "JENKINS_VERSION=$(docker inspect jenkins | jq -r '.[].Config.Env[] | select(startswith("JENKINS_VERSION=")) | split("=")[1]')" >> $GITHUB_ENV
+
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
@@ -75,6 +80,7 @@ jobs:
         tag_name: jenkins2go_${{ steps.date.outputs.date }}
         release_name: Release jenkins2go_${{ steps.date.outputs.date }}
         body: |
+          Jenkins Version: ${{ env.JENKINS_VERSION }}
           This will overiid by next step
       
     - uses: xresloader/upload-to-github-release@v1
