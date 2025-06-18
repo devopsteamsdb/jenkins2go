@@ -114,7 +114,6 @@ workflow-aggregator
 workflow-api
 workflow-basic-steps
 workflow-cps
-workflow-cps-global-lib
 workflow-durable-task-step
 workflow-job
 workflow-multibranch
