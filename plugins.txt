@@ -97,7 +97,6 @@ scm-api
 script-security
 sidebar-link
 simple-theme-plugin
-ShiningPanda
 splunk-devops
 ssh-agent
 ssh-credentials
