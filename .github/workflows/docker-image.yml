@@ -69,7 +69,7 @@ jobs:
     - name: Get jenkins version
       id: jenkins_version
       run: |
-          echo "JENKINS_VERSION=$(docker inspect jenkins | jq -r '.[].Config.Env[] | select(startswith("JENKINS_VERSION=")) | split("=")[1]')" >> $GITHUB_ENV
+          echo "JENKINS_VERSION=$(docker inspect devopsteamsdb/devopsteamsdb:jenkins2go_latest | jq -r '.[].Config.Env[] | select(startswith("JENKINS_VERSION=")) | split("=")[1]')" >> $GITHUB_ENV
 
     - name: Create Release
       id: create_release
